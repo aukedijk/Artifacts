@@ -1,0 +1,1 @@
+dialog_begin(DIALOG_POTION_SELLER_2);
