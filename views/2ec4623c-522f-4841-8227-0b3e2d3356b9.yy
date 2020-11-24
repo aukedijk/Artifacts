@@ -13,7 +13,8 @@
         "b2badc8d-def8-4649-b570-7b6ee4c461a1",
         "55fdc549-8b1c-4e65-8fc0-cf014b35e13d",
         "845a0ed8-907b-446a-9335-ea780af31f5f",
-        "79b34c6b-f0b8-4e9c-abce-9019e7bf153f"
+        "79b34c6b-f0b8-4e9c-abce-9019e7bf153f",
+        "38cc3429-37fa-426b-ae4a-8642bc027a3c"
     ],
     "filterType": "GMScript",
     "folderName": "Dialog System",

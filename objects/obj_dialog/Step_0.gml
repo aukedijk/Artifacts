@@ -14,7 +14,7 @@ if(options != 0)
 }
 
 // Are interact/escape keys pressed?
-var interact = keyboard_check_pressed(vk_space);
+var interact = keyboard_check_pressed(vk_enter);
 var escape = false;
 if (!interact) escape = keyboard_check_pressed(vk_escape);
 
@@ -36,6 +36,9 @@ if(multiline_wait_for_player && interact) {
 // Is the dialog done?
 if(_curstring_arr == array_length_1d(_strings) - 1 && _curstring_index > string_length(_strings[_curstring_arr]))
 {
+	// draw branches
+	_draw_branches = true;
+	
 	// Did the user select a branch?
 	if(interact && options != 0)
 	{
@@ -81,4 +84,6 @@ if(skiptoend)
 	_curstring = _strings[_curstring_arr];
 	_curstring_index = string_length(_strings[_curstring_arr]) + 1;
 	if(_curstring_arr < array_length_1d(_strings) - 1) multiline_wait_for_player = true;
+	
+	_draw_branches = true; // draw branches
 }

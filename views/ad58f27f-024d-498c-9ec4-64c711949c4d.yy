@@ -4,8 +4,8 @@
     "mvc": "1.1",
     "name": "ad58f27f-024d-498c-9ec4-64c711949c4d",
     "children": [
-        "242a9c49-8d23-4a52-8990-f91dbe083d46",
-        "e042ff9d-5d29-4de8-b121-d36c6433eb96"
+        "fe589573-af73-415c-8214-b605cdc0012c",
+        "7a3ad22c-5230-470a-8654-b59fdb624529"
     ],
     "filterType": "GMSprite",
     "folderName": "portraits",

@@ -25,8 +25,17 @@ global.dialogs_you_cant_escape[0] = DIALOG_SYSTEM_CANT_ESCAPE_ANY;
 //	Create all the data structures we make use of
 //
 
+// the CSV mothafackazz
+global.dialog_csv = load_csv("dialog.csv");
+
 var map = ds_map_create();
 global.dialog_map_strings = map;				// All the dialog strings added with dialog_add_string
+
+map = ds_map_create();
+global.dialog_map_portraits = map;				// All the portraits added with dialog_add_portrait
+
+//map = ds_map_create();
+//global.dialog_orientation = map;				// All limbs inside the car at all times, thank you.
 
 map = ds_map_create();
 global.dialog_map_branches = map;				// All the dialog branches added with dialog_add_branch

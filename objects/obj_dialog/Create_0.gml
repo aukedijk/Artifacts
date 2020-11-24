@@ -12,6 +12,7 @@ dialogHeight = 0;		// The height of this dialog, i.e. the height of all wrapped 
 branchesHeight = 0;		// The height of the branches dialog
 
 _branches = 0;						// The branches as a ds_list
+_draw_branches = false;				// Only draw branches once text is fully printed
 selected_branch = 0;				// The currently selected branch
 options = 0;						// ds_list_size(_branches)
 multiline_wait_for_player = false;	// Whether it's waiting for user input to progress in the current dialog, or not
@@ -19,6 +20,12 @@ multiline_wait_for_player = false;	// Whether it's waiting for user input to pro
 // The instance that spawned this dialog
 // Gets overwritten in User Event 0
 calling_instance = id;
+
+// Avatar stuff
+dialog_avatar = "";
+protag_avatar = "";
+left_facing = true;
+if (instance_exists(protag)) left_facing = protag.facingLeft;
 
 // In destroy event, if was_escaped is true also run escape events
 was_escaped = false;

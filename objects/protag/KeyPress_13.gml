@@ -5,8 +5,6 @@ if (npcIsNear)
 	instance_deactivate_object(press_Enter);
 	
 	event_invoke(event.dialogCall_0);
-	//d_npc0(0);
-	//init_demo_dialogs();
 }
 
 

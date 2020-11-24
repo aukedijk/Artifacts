@@ -14,6 +14,7 @@ else if(_curstring_arr < array_length_1d(_strings) - 1) {
 	if(dialog_wait_for_user_input()) {
 		// Wait for user input before progressing in dialog
 		multiline_wait_for_player = true;
+		
 	}
 	else {
 		// Next line

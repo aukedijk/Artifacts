@@ -1,8 +1,6 @@
 // The dialog system does nothing if we don't tick it
 dialog_tick(false);
 
-
-
 // save mvspd value for diagonal mv support
 var mvSpd = mvspd;
 
