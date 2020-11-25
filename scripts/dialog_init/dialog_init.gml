@@ -25,6 +25,7 @@ global.dialogs_you_cant_escape[0] = DIALOG_SYSTEM_CANT_ESCAPE_ANY;
 //	Create all the data structures we make use of
 //
 
+
 // the CSV mothafackazz
 global.dialog_csv = load_csv("dialog.csv");
 

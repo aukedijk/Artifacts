@@ -1,1 +1,0 @@
-obj_dialog.left_facing = true;

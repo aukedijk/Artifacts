@@ -1,8 +1,8 @@
 {
-    "id": "38cc3429-37fa-426b-ae4a-8642bc027a3c",
+    "id": "102e5b10-3d70-4acc-b70b-cfcd782a91d6",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "dialog_isLeftFacing",
+    "name": "dialog_parse_csv",
     "IsCompatibility": false,
     "IsDnD": false
 }

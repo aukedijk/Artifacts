@@ -1,8 +1,12 @@
-INSTRUCTIONS ON NEXT PAGE!,,,,,,
-,,,,,,
 NPC name,unique dialog ID (macro),BRANCH ID,BRANCH Action (script),Lines,Portrait (filename),level values
+npc0,101,,,Hello traveller.\What can I do for you?,prtr_fem,"[ 1, 4, 1, 2, 2, 2, 1]"
+,,0,40,"Potion-seller, I want you to give me your strongest potion!",,
+,,1,-1,Nothing.,,
+,102,,,"My potions are much too strong for you, traveller; they would surely kill you!",,
 ,,,,,,
-npc0,DIALOG_POTION_SELLER 0,,,"""Hello traveller.\nWhat can I do for you?""",prtr_fem,"[ 1, 4, 1, 2, 2, 2, 1]"
-,,0,npc0_potion_requested,"""Potion-seller, I want you to give me your strongest potion!""",,
-,,1,DO_NOTHING,"""Nothing.""",,
-,DIALOG_POTION_SELLER_2 1,,,"""My potions are much too strong for you, traveller; they would surely kill you!""",,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+INSTRUCTIONS ON NEXT PAGE!,,,,,,
