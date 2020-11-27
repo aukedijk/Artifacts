@@ -4,4 +4,4 @@
 dialog_parse_csv(DIALOG_POTION_SELLER);
 
 #macro DIALOG_POTION_SELLER_2 102
-//dialog_parse_csv(DIALOG_POTION_SELLER_2);
+dialog_parse_csv(DIALOG_POTION_SELLER_2);

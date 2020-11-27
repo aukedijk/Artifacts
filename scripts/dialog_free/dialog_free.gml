@@ -3,6 +3,9 @@
 var temp = global.dialog_map_strings;
 ds_map_destroy(temp);
 
+var temp = global.dialog_map_lvls;
+ds_map_destroy(temp);
+
 var temp = global.dialog_map_portraits;	
 ds_map_destroy(temp);
 

@@ -35,8 +35,8 @@ global.dialog_map_strings = map;				// All the dialog strings added with dialog_
 map = ds_map_create();
 global.dialog_map_portraits = map;				// All the portraits added with dialog_add_portrait
 
-//map = ds_map_create();
-//global.dialog_orientation = map;				// All limbs inside the car at all times, thank you.
+map = ds_map_create();
+global.dialog_map_lvls = map;				// The level modified version of each string
 
 map = ds_map_create();
 global.dialog_map_branches = map;				// All the dialog branches added with dialog_add_branch

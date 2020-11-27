@@ -1,8 +1,8 @@
 {
-    "id": "2ee2bdc4-96a0-42ef-9943-0620d2a36cf6",
+    "id": "93add4bf-c872-410c-ba0a-7c0d4af35f26",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "dialog_add_orientation",
+    "name": "string_with_reqs",
     "IsCompatibility": false,
     "IsDnD": false
 }

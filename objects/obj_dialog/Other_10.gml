@@ -1,6 +1,13 @@
 /// @desc Prepare dialog
 
-_string = dialog_get_string(key);
+_str_ar = dialog_get_string(key);
+_lvls_ar = dialog_get_lvls(key);
+//show_message(_lvls_ar);
+//show_message(_str_lvl_reqs[1]);
+_new_string = string_with_reqs(_str_ar, _lvls_ar, protag.playerLvl);
+
+//show_debug_message(_new_string);
+
 _branches = dialog_get_available_branches(key);
 options = ds_list_size(_branches);
 _branching = options > 0;
@@ -18,19 +25,19 @@ if(arg_count > 0)
 	while(argc < arg_count) {
 		var argstr = "{" + string(argc) + "}";
 		if(string_count(argstr, _string) > 0) {
-			_string = string_replace_all(_string, argstr, arg[argc + 1]);
+			_new_string = string_replace_all(_new_string, argstr, arg[argc + 1]);
 		}
 		++argc;
 	}
 }
 
 // Expand macro variables, e.g. ${item_name} to value of the "item_name" variable
-var st = _string;
+var st = _new_string;
 with(calling_instance) {
 	// Expand macro
 	st = dialog_expand_macros(st);
 }
-_string = st;
+_new_string = st;
 
 // Wrap the string to display
 var fnt = draw_get_font();
@@ -39,7 +46,7 @@ var fnt = draw_get_font();
 draw_set_font(fnt_dialog);
 
 // -128 for the 2x 64 corners in the 9-slice sprite
-_strings = string_wrap(_string, dialog_get_width() - 128);
+_strings = string_wrap(_new_string, dialog_get_width() - 128);
 
 //
 // Calculate height of dialog box

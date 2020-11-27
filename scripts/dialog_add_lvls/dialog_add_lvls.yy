@@ -1,8 +1,8 @@
 {
-    "id": "6e089407-5b4f-43b0-9862-f56e02413c0c",
+    "id": "26fac16d-478a-462f-972a-db62b78e4179",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "dialog_get_orientation",
+    "name": "dialog_add_lvls",
     "IsCompatibility": false,
     "IsDnD": false
 }

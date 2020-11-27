@@ -1,6 +1,7 @@
 /// @desc Initialize
 
-_string = "";			// The current string
+_string = "";
+_new_string = "";		// The current string
 _strings[0] = "";		// The wrapped strings that are drawn
 arg_count = 0;			// The amount of arguments passed to this dialog
 arg[0] = undefined;		// All arguments passed to this dialog, arg[0] is always the calling instance
@@ -23,7 +24,7 @@ calling_instance = id;
 
 // Avatar stuff
 dialog_avatar = "";
-protag_avatar = "";
+//protag_avatar = "";
 left_facing = true;
 if (instance_exists(protag)) left_facing = protag.facingLeft;
 
