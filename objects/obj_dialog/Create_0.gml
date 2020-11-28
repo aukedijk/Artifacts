@@ -24,7 +24,7 @@ calling_instance = id;
 
 // Avatar stuff
 dialog_avatar = "";
-//protag_avatar = "";
+protag_avatar = ""; // TODO(eloy): link to player choosing appearance at beginning of game
 left_facing = true;
 if (instance_exists(protag)) left_facing = protag.facingLeft;
 

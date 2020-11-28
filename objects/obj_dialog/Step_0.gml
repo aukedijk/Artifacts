@@ -3,11 +3,11 @@
 // Select branch, if any
 if(options != 0)
 {
-	if (keyboard_check_pressed(vk_up))
+	if (keyboard_check_pressed(ord("W")))
 	{
 		if(selected_branch > 0) selected_branch += -1;
 	}
-	else if (keyboard_check_pressed(vk_down))
+	else if (keyboard_check_pressed(ord("S")))
 	{
 		if(selected_branch < options - 1) selected_branch += 1;
 	}
@@ -74,6 +74,9 @@ if(_curstring_arr == array_length_1d(_strings) - 1 && _curstring_index > string_
 		
 		// Destroy obj_dialog
 		instance_destroy();
+		
+		// Sent message to player that dialog is over
+		event_invoke(event.dialogFinished);
 	}
 }
 

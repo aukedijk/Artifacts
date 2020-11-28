@@ -1,3 +1,3 @@
 /// @description 
 
-facingLeft = false;
+if (!inDialog) facingLeft = false;

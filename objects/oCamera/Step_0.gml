@@ -1,11 +1,11 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description
 
 x += (xTo - x) / 25;
 y += (yTo - y) / 25;
 
 if (follow != noone)
 {
+	// camera follows protag as he moves, rather than waiting for it to reach the border of the screen
 	xTo = follow.x;
 	yTo = follow.y;
 }

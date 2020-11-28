@@ -1,5 +1,5 @@
 ///@description script_execute_alt
-///@arg ind
+///@arg script
 ///@arg [arg1,arg2,...]
 
 var s = argument0;
@@ -7,6 +7,8 @@ var a = argument1;
 var len = array_length_1d(argument1);
 var val;
 
+// FULLY executes a script by passing it every argumentt contained in the listener's info array
+// each line corresponds to a given amount of arguments we might have passed this function
 switch(len){
 	case 0:  val = script_execute(s); break;
 	case 1:  val = script_execute(s, a[0]); break;

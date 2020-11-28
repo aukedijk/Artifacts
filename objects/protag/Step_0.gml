@@ -1,5 +1,5 @@
-// The dialog system does nothing if we don't tick it
-dialog_tick(false);
+// The dialog system does nothing if we don't tick it (= have it fetch new dialog)
+dialog_tick(false); // false is to force dialog to play only when previous dialog is finished playing
 
 // save mvspd value for diagonal mv support
 var mvSpd = mvspd;
@@ -15,40 +15,44 @@ var horizInput = buttonRight || buttonLeft;
 var vertInput = buttonUp || buttonDown;
 var diagonMv = horizInput && vertInput;
 
-// handle horizontal movement
-if (diagonMv)
-{
-	mvSpd = mvspd / sqrt(2);
-}
-else
-{
-	mvSpd = mvspd;
-}
-
-
 var horiz_spd = 0;
-
-if (buttonRight)
-{
-	horiz_spd = mvSpd;
-}
-else if (buttonLeft)
-{
-	horiz_spd = -mvSpd;
-} 
-
-x += horiz_spd;
-
 var vert_spd = 0;
 
-if (buttonDown) // up is origin of y-axis
+// handle horizontal movement
+if (!inDialog)
 {
-	vert_spd = mvSpd;
+	if (diagonMv)
+	{
+		mvSpd = mvspd / sqrt(2);
+	}
+	else
+	{
+		mvSpd = mvspd;
+	}
+
+
+	
+
+	if (buttonRight)
+	{
+		horiz_spd = mvSpd;
+	}
+	else if (buttonLeft)
+	{
+		horiz_spd = -mvSpd;
+	} 
+
+	x += horiz_spd;
+
+	if (buttonDown) // up is origin of y-axis
+	{
+		vert_spd = mvSpd;
+	}
+	else if (buttonUp)
+	{
+		vert_spd = -mvSpd;
+	} 
 }
-else if (buttonUp)
-{
-	vert_spd = -mvSpd;
-} 
 
 y += vert_spd;
 
@@ -69,4 +73,11 @@ else if(horiz_spd < 0)
 {
 	sprite_index = skelly_walk_left;
 }
-else sprite_index = skelly_limited_idle;
+else
+{
+	if (facingLeft)
+	{
+		sprite_index = protag_mal_idle_left;
+	}
+	else sprite_index = protag_mal_idle;
+}

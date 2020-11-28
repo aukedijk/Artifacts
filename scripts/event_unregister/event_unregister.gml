@@ -1,12 +1,13 @@
 ///@arg event
 ///@arg listener_id
 
+// "with" goes and grabs a reference to all the variables local to the event manager => the events list
 with (event_manager)
 {
 	var ev = argument[0];
 	var objID = argument[1];
 	
-	// get listeners
+	// get listeners list for this event
 	if (ds_map_exists(eventMap, ev))
 	{	
 		var listenerList = eventMap[? ev];
@@ -17,7 +18,8 @@ with (event_manager)
 			var listenerInfo = listenerList[| i];
 			if (listenerInfo[0] == objID)
 			{
-				// check we are only listener
+				// if we are the only listener remaining, destroy the whole listeners list for this event
+				// VERY IMPORTANT to avoid maps lying around in memory (otherwise, we 've got a memory leak)
 				if (len == 1)
 				{
 					ds_list_destroy(listenerList);	
@@ -26,7 +28,7 @@ with (event_manager)
 				}
 				else
 				{
-					ds_list_delete(listenerList, i); // only delete single entry otherwise	
+					ds_list_delete(listenerList, i); // otherwise, only delete single listener from list
 				}
 				break;
 				

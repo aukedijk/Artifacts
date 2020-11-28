@@ -519,6 +519,14 @@
             }
         },
         {
+            "Key": "809482a3-24d5-4463-b7a1-44347e654536",
+            "Value": {
+                "id": "cea1bcf6-2ceb-4d03-ae88-b38e5d5e19c2",
+                "resourcePath": "sprites\\protag_mal_idle_left\\protag_mal_idle_left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "81bc50da-9b73-482f-aa1f-47df562e3540",
             "Value": {
                 "id": "ef2243b3-d44e-4122-b9ac-60d6b97521d3",
@@ -711,11 +719,27 @@
             }
         },
         {
+            "Key": "a8d74ef6-432b-4d3d-a02c-e5477e3dfc61",
+            "Value": {
+                "id": "c1273771-1c4e-4ff7-87db-9c3f7f15728a",
+                "resourcePath": "scripts\\dialog_exit\\dialog_exit.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "2a007dd2-a3f6-480a-8c69-5b8a3a3cbae8",
                 "resourcePath": "options\/linux\/options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "acfdf3e7-e648-4682-b1ec-7a81af6959cc",
+            "Value": {
+                "id": "532a55ae-e2ce-43ff-938d-de291ddf8be0",
+                "resourcePath": "views\\acfdf3e7-e648-4682-b1ec-7a81af6959cc.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -895,6 +919,22 @@
             }
         },
         {
+            "Key": "df272ff4-68b8-4caf-a5c3-f829315ee546",
+            "Value": {
+                "id": "8ed42e51-f535-4df5-bad5-4fb32fd3ced8",
+                "resourcePath": "views\\df272ff4-68b8-4caf-a5c3-f829315ee546.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e26cf5d6-d494-46bf-a628-594833863866",
+            "Value": {
+                "id": "5cf713a4-130c-4bf4-a4ba-5174c25c22c4",
+                "resourcePath": "sprites\\protag_mal_idle\\protag_mal_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
             "Value": {
                 "id": "54ad45d3-b06d-4ce7-a495-79647573ce72",
@@ -988,6 +1028,14 @@
                 "id": "22fc2273-00bf-4206-85c4-e68744feec26",
                 "resourcePath": "scripts\\dialog_add_portrait\\dialog_add_portrait.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f4024e0e-9ed0-4c25-bf37-dbe29252a338",
+            "Value": {
+                "id": "2b266b3a-b690-4d40-9e27-92038f9046c5",
+                "resourcePath": "views\\f4024e0e-9ed0-4c25-bf37-dbe29252a338.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1113,7 +1161,8 @@
         "e9207418-7e8c-4ca6-a1e6-f911dba611c3",
         "f2b34697-0183-413d-9cfc-161c04988e41",
         "93add4bf-c872-410c-ba0a-7c0d4af35f26",
-        "2b0676cb-d533-43af-a827-ab94be266726"
+        "2b0676cb-d533-43af-a827-ab94be266726",
+        "a8d74ef6-432b-4d3d-a02c-e5477e3dfc61"
     ],
     "tutorial": ""
 }

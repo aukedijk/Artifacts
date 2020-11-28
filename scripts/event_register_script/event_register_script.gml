@@ -1,15 +1,17 @@
 ///@param event
 ///@arg listener_id
 ///@arg script
-///@arg arg1...* // optional arguments
+///@arg arg1...* // optional arguments, not currently in use
 
 
 with(event_manager) {
 	var ev = argument[0];
 	var objID = argument[1];
 	
-	// check if event map exists or not, to avoid duplicates
+	// check if event map exists or not, to avoid duplicates 
+	// (and ending up calling an event into the map that doesn't  contain it)
 	if (!ds_map_exists(eventMap, ev)) {
+		
 		// must add event to map
 		var listenerList = ds_list_create();
 		

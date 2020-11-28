@@ -2,11 +2,8 @@
 
 _str_ar = dialog_get_string(key);
 _lvls_ar = dialog_get_lvls(key);
-//show_message(_lvls_ar);
-//show_message(_str_lvl_reqs[1]);
+// get new string by converting string array, and randomizing certain words based on player level
 _new_string = string_with_reqs(_str_ar, _lvls_ar, protag.playerLvl);
-
-//show_debug_message(_new_string);
 
 _branches = dialog_get_available_branches(key);
 options = ds_list_size(_branches);

@@ -1,5 +1,6 @@
 /// @description 
 
+// set as a constant for now, while we still don't have an XP system
 playerLvl = 1;
 
 // Initialize the dialog system
@@ -11,12 +12,6 @@ mvspd = 2;
 // default to facing left
 facingLeft = true;
 
-
-
-// str_array test
-//var str = "Yo! Help! I need to get out a here right now, man!";
-//show_message(string_to_array(str));
-//var str = string_with_reqs(["Hi", "missa", "padawan", "bunkee!", "Johd", "lamh!", "Damn."], dialog_get_lvl(101), 1);
-//show_message(str);
-
-//show_message(dialog_get_lvls(101));
+// check if talking, to prevent movement or loading of new dialog
+inDialog = false;
+event_register_script(event.dialogFinished, id, dialog_exit)
