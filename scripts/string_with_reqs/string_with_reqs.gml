@@ -28,8 +28,11 @@ for (var i = 0; i < len; ++i)
 			// 255 is max value for UTF-8 characters
 			// string_ord_at finds the UTF-8 value of the character at a given index
 			// string_set_byte_at changes the character value
-			str_ar[i] = string_set_byte_at(str_ar[i], j, (string_ord_at(str_ar[i], j) + rand) % 255);
-			rand = randomise();
+			if ((string_ord_at(str_ar[i], j) >= 65 && string_ord_at(str_ar[i], j) <= 81) || (string_ord_at(str_ar[i], j) >= 88 && string_ord_at(str_ar[i], j) <= 114))
+			{
+				str_ar[i] = string_set_byte_at(str_ar[i], j, ((string_ord_at(str_ar[i], j) + rand) % 49) + 65);
+				rand = randomise();
+			}
 		}	
 	}
 }

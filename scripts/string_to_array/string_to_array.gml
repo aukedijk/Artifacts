@@ -22,7 +22,7 @@ while (place <= len + 1)
 	if (string_char_at(str, place) == " " || string_char_at(str, place) == "\n" || place == len + 1)
 	{
 		str_array[i] = string_copy(str, prevPlace, place - prevPlace);
-		prevPlace = place;
+		prevPlace = place + 1;
 		++i;
 	}
 	place++;

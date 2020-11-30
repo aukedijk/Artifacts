@@ -67,6 +67,11 @@ if(_curstring_arr == array_length_1d(_strings) - 1 && _curstring_index > string_
 			dialog_stash_append(dialog_stack);
 			ds_list_destroy(dialog_stack);
 		}
+		else
+		{
+			// Sent message to player that dialog is over
+			event_invoke(event.dialogFinished);	
+		}
 	}
 	else if(interact || (escape && dialog_can_escape())) {
 		// The dialog has either ended or has been escaped by the user

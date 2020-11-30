@@ -2,6 +2,10 @@
 
 _str_ar = dialog_get_string(key);
 _lvls_ar = dialog_get_lvls(key);
+
+// send lvls average for xp system support
+//compute_lvls_average(_lvls_ar);
+
 // get new string by converting string array, and randomizing certain words based on player level
 _new_string = string_with_reqs(_str_ar, _lvls_ar, protag.playerLvl);
 
